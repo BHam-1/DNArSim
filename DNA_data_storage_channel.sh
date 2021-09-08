@@ -78,44 +78,46 @@ prevDir=$(pwd)
 	fi
 	
 
-	
+
 	if [ -f "$prevDir/$inPath" ]
 	then
-		seq=$(sed -n -e 2p $prevDir/$inPath)
+		inPath=$prevDir/$inPath
 	elif [ -f "$inPath" ]
 	then
-
-		seq=$(sed -n -e 2p $inPath)
-
-
+		inPath=$inPath
 	else
 		echo "error: input path file  is incorrect"
 		exit 1
 	fi
 
 	
-	if ! touch $outPath
+	
+
+
+	if ! touch $prevDir/$outPath > /dev/null 2>&1 
 	then
-		echo "error: incorrect output path"
-		exit 1
+		if ! touch $outPath > /dev/null 2>&1 
+		then
+			echo "error: incorrect output path"
+			exit 1
+		else
+			outPath=$outPath
+		fi
+
+	else
+		outPath=$prevDir/$outPath
 	fi
 
 
-	echo -n "" > $outPath
 
 
-
-
-	#launching
-
-	
+	#launch
 	
 	echo -n "-> Launching... "
 
 	cd ./simulator
 
-
-		./channelEdit_chained_beg_end_YiKmerDependOnPrevYi.sh $seq $nbrRead $outPath $k 
+		julia simulator_v1.jl $nbrRead $inPath $outPath $k
 
 	cd ..
 

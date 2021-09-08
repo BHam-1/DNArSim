@@ -13,25 +13,12 @@
 
 
 
-prevDir=$(pwd)
-
-cd $(dirname $0)
-	
-	simOut=""
-	# check if absolute or relative
-	if [ -f $prevDir/$3 ] 
-	then	
-		simOut=$prevDir/$3
-	elif [ -f $3 ]
-	then
-		simOut=$3
-	fi
 	
 	refFile=tmpRefFile.txt
 	
 	echo $1 > $refFile
 
-	n=$2; #nbr of seq to simulate
+	n=$2 #nbr of seq to simulate
 
 
 	k=6
@@ -41,7 +28,13 @@ cd $(dirname $0)
 		k=$4
 
 	fi
-	
+
+	simOut=$3
+
+	echo $n
+	echo $refFile
+	echo $simOut
+	echo $k
 
 	julia simulator_v1.jl $n $refFile $simOut $k
 

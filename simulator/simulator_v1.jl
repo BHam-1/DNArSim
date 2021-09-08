@@ -31,8 +31,8 @@ nbrSim=parse(Int64,ARGS[1])
 
 
 seq=Char.(read(ARGS[2]))
-tmpLen=length(seq)
-if(seq[tmpLen]!='A' && seq[tmpLen]!='C' && seq[tmpLen]!='G' && seq[tmpLen]!='T')
+
+if(seq[1]=='>')
 	pop!(seq)
 end
 
