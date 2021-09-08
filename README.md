@@ -2,8 +2,8 @@
 
 Simulator to simulate the entire DNA Data Storage process (from synthesis to basecalling)
 
-
 This is the first version of the Channel Model with Memory for DNA Data Storage with Nanopore Sequencing based on Julia (https://julialang.org/downloads/).
+Julia was used with 1.5.3 version and recent ones should also be compatible (tested until v1.6.2).
 
 After setting Julia correctly, simulations can be launched using next command:
 
