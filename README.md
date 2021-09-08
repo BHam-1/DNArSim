@@ -7,7 +7,7 @@ This is the first version of the Channel Model with Memory for DNA Data Storage 
 
 After setting Julia correctly, simulations can be launched using next command:
 
-> ./DNA_data_storage_channel.sh -i ./example/ref.txt -n 100 -o ~/example/sim.fastq -k 6
+> ./DNA_data_storage_channel.sh -i ./example/ref.txt -n 100 -o ./example/sim.fastq -k 6
 	
 **Parameters**:
 
