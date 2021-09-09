@@ -15,5 +15,13 @@ After setting Julia correctly, simulations can be launched using next command:
  * **-n**:  Number of reads to simulate. [required]
  * **-o**:  Simulated sequences output path. Will be presented in a fastq format (without included scores). [required]
  * **-k**:  Channel memory length.  fixed to k=6 by default [recommended]
-	
+
+**Error Profile**:
+
+Error profiles were computed using DNA data storage data which went through multiple steps including:
+* **_Synthesis_**: chemical technique, with oligonucleotide assembling  called "GeneArt Strings DNA Fragments" and done by *Thermofisher*.
+* **_Sequencing_**: MinIon sequencer with "R9.4_180mv_450bps" nanopore model  
+* **_Basecalling_**: Guppy v5.0.7 using "super-accurate" mode. 
+
+
 More documentation will be added as soon as possible. Meanwhile feel free to reach me by e-mail (**belaid.hamoum@gmail.com**) for more details.
