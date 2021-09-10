@@ -1,4 +1,4 @@
-# DNA_Data_Storage_Channel_Model
+# DNA Data Storage Channel Model with Nanopore sequencing
 
 Simulator to simulate the entire DNA Data Storage process (from synthesis to basecalling)
 
