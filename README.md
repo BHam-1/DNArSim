@@ -11,7 +11,7 @@ After setting Julia correctly, simulations can be launched using next command:
 	
 **Parameters**:
 
- * **-i**:  Path to the input sequence (should be on fasta format) to simulate. An example of such sequence is available on "example" folder with the name 'ref.txt'. [required]
+ * **-i**:  Path to the input sequence (should be on fasta format) to simulate. An example of such sequence is available on "example" folder with the name 'ref.txt' and length=1086. [required]
  * **-n**:  Number of reads to simulate. [required]
  * **-o**:  Simulated sequences output path. Will be presented in a fastq format (without included scores). [required]
  * **-k**:  Channel memory length.  fixed to k=6 by default [recommended]
