@@ -54,28 +54,28 @@ end
 function substB(seqTmp,rangeTransProb,currBase)
 	r=rand()
 	base=""
-	if(currBase=="A")
+	if(currBase=='A')
 		for j=1:length(rangeTransProb[1])
 			if (r<=rangeTransProb[1][j])
 				base=split(subList[1,j],"2")[2] 
 				break;
 			end
 		end
-	elseif(currBase=="C")
+	elseif(currBase=='C')
 		for j=1:length(rangeTransProb[2])
 			if (r<=rangeTransProb[2][j])
 				base=split(subList[2,j],"2")[2] 
 				break;
 			end
 		end
-	elseif(currBase=="G")
+	elseif(currBase=='G')
 		for j=1:length(rangeTransProb[3])
 			if (r<=rangeTransProb[3][j])
 				base=split(subList[3,j],"2")[2] 
 				break;
 			end
 		end
-	elseif(currBase=="T")
+	elseif(currBase=='T')
 		for j=1:length(rangeTransProb[4])
 			if (r<=rangeTransProb[4][j])
 				base=split(subList[4,j],"2")[2]
