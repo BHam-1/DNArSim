@@ -73,7 +73,7 @@ for i=1:length(subList[:,1])
 	push!(transProb,tmpProb)
 end
 
-#I should get thes RESULTS DIRECTLY DURING the training !!!!!----- RESOLVE THIS!!!!!!!!!!!!
+
 for i=1:length(subList[:,1])
 	transProb[i]=transProb[i]/sum(transProb[i])
 end
@@ -155,17 +155,6 @@ for e1=1:4
 
 end
 
-
-
-
-
-#probDel of current k-mer knowing that a delete occurs previously (Yi(kmeri) depend on Y-1)
-DelProb_YiprevDel=readdlm("$(root)/KmerDel_delPrevRates.txt");
-mapDelProb_YiprevDel=Dict()
-nKmer=length(DelProb_YiprevDel[:,1]) #nbr of entries
-for i=1:nKmer
-	mapDelProb_YiprevDel[DelProb_YiprevDel[i,1]]=DelProb_YiprevDel[i,2]
-end
 
 
 probInsLenBeg=Float32.(readdlm("$(root)/insLenBegRates.txt")[1,1:end-1])
