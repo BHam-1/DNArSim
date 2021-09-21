@@ -1,6 +1,11 @@
-# DNA Data Storage Channel Model with Nanopore sequencing
+# Channel Model with Memory for DNA Data Storage with Nanopore Sequencing
 
 Simulator to simulate the entire DNA Data Storage process (from synthesis to basecalling)
+
+The Channel Model with Memory for DNA Data Storage with Nanopore Sequencing is published in ISTC2021 conference. If you use this Simulator in your research, please cite this manuscript:
+<br>
+> B.  Hamoum,  E.  Dupraz,  L.  Conde-Canencia,  and  D.  Lavenier,“Channel Model with Memory for DNA Data Storage with NanoporeSequencing,” in ISTC 2021 - 11th International Symposium on Topics in Coding.  Montreal, Canada: IEEE, Aug. 2021, pp. 1–5. (https://hal.archives-ouvertes.fr/hal-03337117/).
+<br>
 
 This is the first version of the Channel Model with Memory for DNA Data Storage with Nanopore Sequencing based on Julia (https://julialang.org/downloads/).
 Julia was used with 1.5.3 version and recent ones should also be compatible (tested until v1.6.2).
