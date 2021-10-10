@@ -50,7 +50,7 @@ prevDir=$(pwd)
 
 	#inputs checking
 
-	if [ $k == "" ]
+	if [ "$k" == "" ]
 	then
 		k=6
 	
