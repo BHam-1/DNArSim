@@ -30,12 +30,16 @@ simSeq=channel(nbrSim,k,seq)
 outPath=open(ARGS[3],"w")
 for iSeq=1:nbrSim
 	len=length(simSeq[iSeq])
-	write(outPath,">simulation $iSeq \n")
+	write(outPath,"@simulation $iSeq \n")
 	for j=1:len
 		write(outPath,simSeq[iSeq][j])
 	end
 	write(outPath,"\n+\n")
-	write(outPath,"@\n")
+	for j=1:len
+		write(outPath,"-")
+	end
+	write(outPath,"\n")
+	
 end
 
 close(outPath)
